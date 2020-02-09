@@ -1,5 +1,5 @@
-from lib.defects import clean, get_status_vs_severity
 from lib.utilities import read_excel
+from lib import defect, user_story
 from config import CONFIG
 
 # Add current directory to system path for module imports with relative paths
@@ -12,12 +12,17 @@ def main():
     defects = read_excel(CONFIG.file_path_exported_defects)
     print('* Read defects from exported excel            ... Done')
 
-    defects = clean(defects)
+    defects = defect.clean(defects)
     print('* Clean defects                               ... Done')
 
-    get_status_vs_severity(defects)
+    defect.get_status_vs_severity(defects)
     print('* Export Status Vs Severity table             ... Done')
   
+    user_stories = read_excel(CONFIG.file_path_exported_user_stories)
+    print('* Read user stories from exported excel       ... Done')
+    
+    user_stories = user_story.clean(user_stories)
+    print('* Clean user stories                          ... Done')
 
 if __name__== "__main__":
   main()
