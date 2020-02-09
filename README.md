@@ -13,3 +13,5 @@ Modules for automated test management, monitoring and reporting.
 * Export Status Vs Severity table             ... Done
 * Read user stories from exported excel       ... Done
 * Clean user stories                          ... Done
+* Retrieving sprint summary                   ... Done
+* Retrieving epic summary                     ... Done

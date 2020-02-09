@@ -2,6 +2,8 @@ class CONFIG:
     file_path_exported_defects       = 'temp/defects.xlsx'
     file_path_exported_user_stories  = 'temp/user_stories.xlsx'
     file_path_sev_vs_status          = 'temp/sev_vs_status.csv'
+    file_path_sprint_us_summary      = 'temp/sprint_us_summary.csv'
+    file_path_epic_summary           = 'temp/epic_summary.csv'
 
 class DEFECTS:
     class PARAMETER_MAPPING:
@@ -36,6 +38,7 @@ class USER_STORIES:
         story_points            = 'story_points'
         linked_epic             = 'epic'
         linked_release_version  = 'version'
+        sprint                  = 'sprint'
     
     class STATUS:
         defined         = 'defined'

@@ -20,9 +20,15 @@ def main():
   
     user_stories = read_excel(CONFIG.file_path_exported_user_stories)
     print('* Read user stories from exported excel       ... Done')
-    
+
     user_stories = user_story.clean(user_stories)
     print('* Clean user stories                          ... Done')
-
+   
+    sprint_summary = user_story.get_sprint_summary(user_stories)
+    print('* Retrieving sprint summary                   ... Done')
+   
+    epic_summary = user_story.get_epic_summary(user_stories)
+    print('* Retrieving epic summary                     ... Done')
+   
 if __name__== "__main__":
   main()
