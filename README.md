@@ -2,6 +2,15 @@
 
 Modules for automated test management, monitoring and reporting.
 
+## Configure before running
+
+### Config file
+
+`config/__init__.py`
+
+* Map the correct field names
+* Check if the input file names are approprite
+
 ## How to run
 
 `launcher.py`
@@ -15,3 +24,8 @@ Modules for automated test management, monitoring and reporting.
 * Clean user stories                          ... Done
 * Retrieving sprint summary                   ... Done
 * Retrieving epic summary                     ... Done
+
+## Improvements in plan
+
+* Retrieve defects and user stories, export to excel using APIs
+* Generate charts
